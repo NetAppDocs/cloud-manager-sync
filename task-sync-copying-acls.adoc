@@ -19,8 +19,8 @@ NOTE: Cloud Sync doesn't support copying ACLs back from object storage to SMB sh
 
 .Choices
 
-* <<Setting up Cloud Sync to copy ACLs between SMB servers,Set up Cloud Sync to automatically copy ACLs>>
-* <<Manually copying ACLs,Manually copy the ACLs between SMB shares>>
+* <<Setting up Cloud Sync to copy ACLs from an SMB server,Set up Cloud Sync to automatically copy ACLs>>
+* <<Manually copying ACLs between SMB shares,Manually copy the ACLs between SMB shares>>
 
 == Setting up Cloud Sync to copy ACLs from an SMB server
 
