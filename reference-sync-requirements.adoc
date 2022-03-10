@@ -381,7 +381,7 @@ Use the Premium or Ultra service level when you sync data to or from Azure NetAp
 
 TIP: Consult a solutions architect if you need help determining the right service level. The volume size and volume tier determines the throughput that you can get.
 
-https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels#throughput-limits[Learn more about Azure NetApp Files service levels and throughput].
+https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels#throughput-limits[Learn more about Azure NetApp Files service levels and throughput^].
 
 === Box requirements
 
@@ -402,7 +402,7 @@ https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-ser
 ** Transferrer Processes Limit
 
 +
-link:task-sync-managing-data-brokers.html#define-a-unified-configuration-for-a-data-broker-group[Learn how to define a unified configuration for a data broker group].
+link:task-sync-managing-data-brokers.html#define-a-unified-configuration-for-a-data-broker-group[Learn how to define a unified configuration for a data broker group^].
 
 === [[google]]Google Cloud Storage bucket requirements
 
