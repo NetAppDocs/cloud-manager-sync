@@ -31,12 +31,12 @@ If you want to create sync relationships for any of the following, then you firs
 . Create or discover the working environment.
 +
 * link:task-manage-fsx-aws.html[Create an Amazon FSx for ONTAP working environment]
-* link:task-manage-anf.html[Setting up and discovering Azure NetApp Files]
-* link:task-deploying-otc-aws.html[Launching Cloud Volumes ONTAP in AWS]
-* link:task-deploying-otc-azure.html[Launching Cloud Volumes ONTAP in Azure]
-* link:task-deploying-gcp.html[Launching Cloud Volumes ONTAP in GCP]
-* link:task-adding-ontap-cloud.html[Adding existing Cloud Volumes ONTAP systems]
-* link:task-discovering-ontap.html[Discovering ONTAP clusters]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html[Setting up and discovering Azure NetApp Files]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html[Launching Cloud Volumes ONTAP in AWS]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html[Launching Cloud Volumes ONTAP in Azure]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html[Launching Cloud Volumes ONTAP in GCP]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-ontap-cloud.html[Adding existing Cloud Volumes ONTAP systems]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Discovering ONTAP clusters]
 
 . Click *Canvas*.
 
@@ -173,4 +173,4 @@ After you initiate a data sync from Cloud Data Sense, all of the source informat
 
 image:screenshot-sync-data-sense.png[A screenshot that shows the Data Sense Integration page that appears after starting a new sync directly from Cloud Data Sense.]
 
-link:task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system[Learn how to start a sync relationship from Cloud Data Sense].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system[Learn how to start a sync relationship from Cloud Data Sense].
