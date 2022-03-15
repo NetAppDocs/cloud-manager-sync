@@ -101,30 +101,6 @@ image:screenshot-sync-table.png[A screenshot of the table view in the Dashboard.
 Cloud Sync now supports deploying the data broker in the AWS Asia Pacific (Jakarta) region.
 // end::whats-new[]
 
-== <date of release in the format dd month year like 28 Nov 2021>
-
-=== <feature title>
-
-<description>
-
-=== <feature title>
-
-<description>
-
-== <date of release in the format dd month year like 28 Nov 2021>
-
-=== <feature title>
-
-<description>
-
-=== <feature title>
-
-<description>
-
-
-
-
-
 == 28 Nov 2021
 
 === ACLs from SMB to object storage
