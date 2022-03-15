@@ -1,5 +1,6 @@
 settings:
   name: Cloud Sync
+  platform: cloud
   internal:
     pdf_enabled: true
   prod:
@@ -68,24 +69,25 @@ sidebar:
           url: /task-get-help.html
     - title: Legal notices
       url: /legal-notices.html
+product-family:
+  name: Cloud Manager
+  repo: cloud-manager-family
 homepage:
   tiles:
     - title: Get started
       links:
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-    - title: tile name
+        - title: Cloud Sync overview
+          url: concept-cloud-sync.html
+        - title: Quick start
+          url: task-sync-quick-start.html
+    - title: Use Cloud Sync
       links:
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
+        - title: Create a sync relationship
+          url: task-sync-creating-relationships.html
+        - title: Set up licensing
+          url: task-sync-licensing.html
+        - title: Manage data broker groups
+          url: task-sync-managing-data-brokers.html
     - title: Blogs & community
       links:
         - title: NetApp Community
