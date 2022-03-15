@@ -1,7 +1,96 @@
 settings:
-  name: "Product Name"
+  name: Cloud Sync
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
 sidebar:
+  entries:
+    - title: Back to Cloud Manager documentation
+      url: https://docs.netapp.com/us-en/cloud-manager-family
+    - title: Cloud Sync docs
+      url: /index.html
+    - title: Release notes
+      url: /whats-new.html
+    - title: Get started
+      entries:
+        - title: Learn about Cloud Sync
+          url: /concept-cloud-sync.html
+        - title: Quick start
+          url: /task-sync-quick-start.html
+        - title: Prepare the source and target
+          url: /reference-sync-requirements.html
+        - title: Prepare networking
+          url: /reference-sync-networking.html
+        - title: Install a data broker
+          entries:
+            - title: Install in AWS
+              url: /task-sync-installing-aws.html
+            - title: Install in Azure
+              url: /task-sync-installing-azure.html
+            - title: Install in GCP
+              url: /task-sync-installing-gcp.html
+            - title: Install on a Linux host
+              url: /task-sync-installing-linux.html
+    - title: Use Cloud Sync
+      entries:
+        - title: Sync data between a source and target
+          entries:
+            - title: Create a sync relationship
+              url: /task-sync-creating-relationships.html
+            - title: Copy ACLs from an SMB share
+              url: /task-sync-copying-acls.html
+            - title: Encrypt NFS data in flight
+              url: /task-sync-nfs-encryption.html
+            - title: Use secrets from HashiCorp Vault
+              url: /task-sync-external-vault.html
+        - title: Set up licensing
+          url: /task-sync-licensing.html
+        - title: Manage sync relationships
+          url: /task-sync-managing-relationships.html
+        - title: Manage data brokers
+          url: /task-sync-managing-data-brokers.html
+        - title: View reports to tune your configuration
+          url: /task-sync-managing-reports.html
+        - title: Uninstall a data broker
+          url: /task-sync-uninstalling.html
+    - title: Automate with the REST API
+      url: /api-sync.html
+    - title: Concepts
+      entries:
+        - title: FAQ
+          url: /faq-sync.html
+    - title: Knowledge and support
+      entries:
+        - title: Register for support
+          url: /task-support-registration.html
+        - title: Get help
+          url: /task-get-help.html
+    - title: Legal notices
+      url: /legal-notices.html
+homepage:
+  tiles:
+    - title: Get started
+      links:
+        - title: title
+          url: page.html
+        - title: title
+          url: page.html
+        - title: title
+          url: page.html
+    - title: tile name
+      links:
+        - title: title
+          url: page.html
+        - title: title
+          url: page.html
+        - title: title
+          url: page.html
+    - title: Blogs & community
+      links:
+        - title: NetApp Community
+          url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+        - title: Cloud Central blog
+          url: https://cloud.netapp.com/blog
+        - title: Cloud webinars
+          url: https://cloud.netapp.com/events
