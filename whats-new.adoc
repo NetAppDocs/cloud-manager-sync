@@ -15,8 +15,7 @@ summary: Learn what's new in <service>.
 [.lead]
 Learn what's new in <service>.
 
-tag::whats-new[]
-
+# tag::whats-new[]
 == <date of release in the format dd month year like 28 Nov 2021>
 
 === <feature title>
@@ -46,8 +45,7 @@ tag::whats-new[]
 === <feature title>
 
 <description>
-
-end::whats-new[]
+# end::whats-new[]
 
 == <date of release in the format dd month year like 28 Nov 2021>
 
