@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: faq-sync.html
+permalink: faq.html
 keywords: community, forums, help, support, videos, faq, getting help, permissions, access control lists, acls, preserve, preserving, troubleshooting, support, encryption, smb
 summary: You can get help with Cloud Sync and find more information through various resources, including forums, chat services, and videos.
 ---
@@ -45,7 +45,7 @@ For pay-as-you-go pricing, Cloud Sync service charges are hourly, based on the n
 
 Cloud Sync licenses are also available through your NetApp representative. Each license enables 20 sync relationships for 12 months.
 
-link:concept-cloud-sync.html[Learn more about licenses].
+link:concept-licensing.html[Learn more about licenses].
 
 NOTE: Cloud Sync relationships are free for Cloud Volumes Service and Azure NetApp Files.
 
@@ -81,13 +81,13 @@ The following questions related to the source and targets that are supported in 
 
 === Which sources and targets does Cloud Sync support?
 
-Cloud Sync supports many different types of sync relationships. link:reference-sync-requirements.html[View the entire list].
+Cloud Sync supports many different types of sync relationships. link:reference-supported-relationships.html[View the entire list].
 
 === What versions of NFS and SMB does Cloud Sync support?
 
 Cloud Sync supports NFS version 3 and later, and SMB version 1 and later.
 
-link:reference-sync-requirements.html[Learn more about sync requirements].
+link:reference-requirements.html[Learn more about sync requirements].
 
 === When Amazon S3 is the target, can the data be tiered to a specific S3 storage class?
 
@@ -126,7 +126,7 @@ The Cloud Sync environment requires that a data broker group is connected with t
 
 In addition, a data broker group needs an outbound internet connection over port 443 so it can communicate with the Cloud Sync service and contact a few other services and repositories.
 
-For more details, link:reference-sync-networking.html[review networking requirements].
+For more details, link:reference-networking.html[review networking requirements].
 
 === Can I use a proxy server with the data broker?
 
@@ -156,7 +156,7 @@ You can schedule a relationship to sync data as often as every 1 minute.
 
 A data broker group doesn't timeout when a single file fails to transfer. Instead, the data broker group retries 3 times before skipping the file. The retry value is configurable in the settings for a sync relationship.
 
-link:task-sync-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn how to change the settings for a sync relationship].
+link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn how to change the settings for a sync relationship].
 
 === What if I have a very large dataset?
 
@@ -186,7 +186,7 @@ Any of these methods establishes a secure connection between your on-premises NA
 
 === Is data encrypted by Cloud Sync?
 
-* Cloud Sync supports data-in-flight encryption between source and target NFS servers. link:task-sync-nfs-encryption.html[Learn more].
+* Cloud Sync supports data-in-flight encryption between source and target NFS servers. link:task-nfs-encryption.html[Learn more].
 
 * For SMB, Cloud Sync supports SMB 3.0 and 3.11 data that you've encrypted on the server side. Cloud Sync copies the encrypted data from the source to the target where the data remains encrypted.
 +
@@ -204,7 +204,7 @@ You can set up Cloud Sync to preserve access control lists (ACLs) between a sour
 
 NOTE: Cloud Sync doesn't support copying ACLs from object storage to SMB shares.
 
-link:task-sync-copying-acls.html[Learn how to copy ACLs between SMB shares].
+link:task-copying-acls.html[Learn how to copy ACLs between SMB shares].
 
 === Are NFS data permissions synced to the target location?
 
@@ -231,7 +231,7 @@ Cloud Sync copies object storage metadata from the source to the target for the 
 * IBM Cloud Object Storage -> StorageGRID
 * IBM Cloud Object Storage -> IBM Cloud Object Storage
 
-^1^ For these sync relationships, you need to link:task-sync-creating-relationships.html[enable a setting when you create the sync relationship].
+^1^ For these sync relationships, you need to link:task-creating-relationships.html[enable a setting when you create the sync relationship].
 
 == Performance
 
@@ -269,7 +269,7 @@ Multiple factors can impact data transfer performance. The overall sync performa
 
 So be sure to check the performance of your networking and the disk throughput on the target.
 
-Then you can consider accelerating sync performance by adding an additional data brokers to a group to share the load of that relationship. link:task-sync-managing-relationships.html#accelerating-sync-performance[Learn how to accelerate sync performance].
+Then you can consider accelerating sync performance by adding an additional data brokers to a group to share the load of that relationship. link:task-managing-relationships.html#accelerating-sync-performance[Learn how to accelerate sync performance].
 
 == Deleting things
 
@@ -283,7 +283,7 @@ Deleting a relationship stops all future data syncs and terminates payment. Any 
 
 By default, if you have an active sync relationship, the item deleted on the source server is not deleted from the target during the next synchronization. But there is an option in the sync settings for each relationship, where you can define that Cloud Sync will delete files in the target location if they were deleted from the source.
 
-link:task-sync-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn how to change the settings for a sync relationship].
+link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn how to change the settings for a sync relationship].
 
 === What happens if I delete something from my target? Is it removed from my source too?
 

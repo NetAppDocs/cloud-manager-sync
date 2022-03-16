@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: reference-sync-networking.html
+permalink: reference-networking.html
 keywords: networking, 443, port, ports, port 443, connections, connectivity, path, paths, vpn
 summary: Networking for Cloud Sync includes connectivity between the data broker group and the source and target locations, and an outbound internet connection from data brokers over port 443.
 ---

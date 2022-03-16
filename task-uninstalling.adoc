@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-uninstalling.html
+permalink: task-uninstalling.html
 keywords: uninstall, uninstall data broker, remove data broker
 summary: If needed, run an uninstall script to remove the data broker and packages and directories that were created when the data broker was installed.
 ---

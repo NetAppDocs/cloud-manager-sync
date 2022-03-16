@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-installing-aws.html
+permalink: task-installing-aws.html
 keywords: data broker, install, aws, networking, permissions, regions, install data broker in aws, install in aws, deploy in aws, deploy data broker in aws, cft, template, iam role, use your own iam role, regions, supported regions, networking requirements, port, ports, 443, port 443, ntp, network time protocol, permissions, iam role, iam permissions, aws data broker
 summary: When you create a new data broker, choose the AWS Data Broker option to deploy the data broker software on a new EC2 instance in a VPC. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 ---
@@ -15,7 +15,7 @@ summary: When you create a new data broker, choose the AWS Data Broker option to
 [.lead]
 When you create a new data broker group, choose Amazon Web Services to deploy the data broker software on a new EC2 instance in a VPC. Cloud Sync guides you through the installation process, but the requirements and steps are repeated on this page to help you prepare for installation.
 
-You also have the option to install the data broker on an existing Linux host in the cloud or on your premises. link:task-sync-installing-linux.html[Learn more].
+You also have the option to install the data broker on an existing Linux host in the cloud or on your premises. link:task-installing-linux.html[Learn more].
 
 == Supported AWS regions
 
@@ -27,7 +27,7 @@ All regions are supported except for the China regions.
 +
 When Cloud Sync deploys the data broker in AWS, it creates a security group that enables the required outbound communication. Note that you can configure the data broker to use a proxy server during the installation process.
 +
-If you need to limit outbound connectivity, see link:reference-sync-networking.html[the list of endpoints that the data broker contacts].
+If you need to limit outbound connectivity, see link:reference-networking.html[the list of endpoints that the data broker contacts].
 
 * NetApp recommends configuring the source, target, and data broker to use a Network Time Protocol (NTP) service. The time difference between the three components should not exceed 5 minutes.
 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-external-vault.html
+permalink: task-external-vault.html
 keywords: hashicorp, vault, credentials, secrets, API
 summary: When you create a sync relationship that requires Amazon S3, Azure, or Google Cloud credentials, you need to specify those credentials through the Cloud Sync user interface or API. An alternative is to set up the data broker to access the credentials directly from an external HashiCorp Vault.
 ---
@@ -162,7 +162,7 @@ If you're using the _gcp-iam_ authentication method, then the data broker must h
 [source,yaml]
 - iam.serviceAccounts.signJwt
 
-link:task-sync-installing-gcp.html#permissions-required-for-the-service-account[Learn more about GCP permission requirements for the data broker].
+link:task-installing-gcp.html#permissions-required-for-the-service-account[Learn more about GCP permission requirements for the data broker].
 
 == Creating a new sync relationship using secrets from the vault
 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-managing-relationships.html
+permalink: task-managing-relationships.html
 keywords: sync, immediate, now, schedule, minutes, hours, on, off, delete, group, accelerate, accelerating, grouping, multiple data brokers, sync now, turn off, turn on, sync schedule, settings, change settings, recently modified files, delete files on target, retries, retry, file types, exclude file type, include file type, delete relationship
 summary: You can manage sync relationships at any time by immediately syncing data, changing schedules, and more.
 ---

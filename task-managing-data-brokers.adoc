@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-managing-data-brokers.html
+permalink: task-managing-data-brokers.html
 keywords: manage data brokers, manage data broker groups, data broker performance, data broker configuration, data broker removal, remove data broker, delete data broker, groups, data broker group, rename data broker group, add data broker, data broker cpu, data broker ram, data broker status, edit group name, change group name, modify group name
 summary: A data broker syncs data from a source location to a target location. A data broker is required for each sync relationship that you create. Manage data brokers by adding a new data broker to a group, by viewing information about data brokers, and more.
 ---
@@ -22,7 +22,7 @@ Grouping data brokers together can help improve the performance of sync relation
 
 === Determining the number of data brokers in a group
 
-In many cases, a single data broker can meet the performance requirements for a sync relationship. If it doesn’t, you can accelerate sync performance by adding additional data brokers to the group. But you should first check other factors that can impact sync performance. link:faq-sync.html#how-many-data-brokers-are-required-in-a-group[Learn more about how to determine when multiple data brokers are required].
+In many cases, a single data broker can meet the performance requirements for a sync relationship. If it doesn’t, you can accelerate sync performance by adding additional data brokers to the group. But you should first check other factors that can impact sync performance. link:faq.html#how-many-data-brokers-are-required-in-a-group[Learn more about how to determine when multiple data brokers are required].
 
 === Groups can manage several relationships
 
@@ -46,7 +46,7 @@ There are several ways to create a new data broker:
 
 * When creating a new sync relationship
 +
-link:task-sync-creating-relationships.html[Learn how to create a new data broker when creating a sync relationship].
+link:task-creating-relationships.html[Learn how to create a new data broker when creating a sync relationship].
 
 * From the *Manage Data Brokers* page by clicking *Add New Data Broker* which creates the data broker in a new group
 
@@ -70,10 +70,10 @@ For example, if a group includes an AWS data broker, then you can create an AWS 
 +
 For help, refer to the following pages:
 +
-* link:task-sync-installing-aws.html[Create a data broker in AWS]
-* link:task-sync-installing-azure.html[Create a data broker in Azure]
-* link:task-sync-installing-gcp.html[Create a data broker in Google Cloud]
-* link:task-sync-installing-linux.html[Installing the data broker on a Linux host]
+* link:task-installing-aws.html[Create a data broker in AWS]
+* link:task-installing-azure.html[Create a data broker in Azure]
+* link:task-installing-gcp.html[Create a data broker in Google Cloud]
+* link:task-installing-linux.html[Installing the data broker on a Linux host]
 
 .Steps to create a data broker in an existing group
 
@@ -87,10 +87,10 @@ image:screenshot_sync_group_add.gif[A screenshot of the action menu that's avail
 +
 For help, refer to the following pages:
 +
-* link:task-sync-installing-aws.html[Create a data broker in AWS]
-* link:task-sync-installing-azure.html[Create a data broker in Azure]
-* link:task-sync-installing-gcp.html[Create a data broker in Google Cloud]
-* link:task-sync-installing-linux.html[Installing the data broker on a Linux host]
+* link:task-installing-aws.html[Create a data broker in AWS]
+* link:task-installing-azure.html[Create a data broker in Azure]
+* link:task-installing-gcp.html[Create a data broker in Google Cloud]
+* link:task-installing-linux.html[Installing the data broker on a Linux host]
 
 == Security recommendations
 

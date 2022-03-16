@@ -17,7 +17,7 @@ There are two ways to pay for sync relationships after your 14-day free trial en
 
 == Marketplace subscription
 
-Subscribing to the Cloud Sync service from AWS or Azure enables you to pay at an hourly rate, or to pay annually. link:task-sync-licensing.html[You can subscribe through either AWS or Azure], depending on where you want to be billed.
+Subscribing to the Cloud Sync service from AWS or Azure enables you to pay at an hourly rate, or to pay annually. link:task-licensing.html[You can subscribe through either AWS or Azure], depending on where you want to be billed.
 
 === Hourly subscription
 
@@ -38,7 +38,7 @@ Another way to pay for sync relationships up front is by purchasing licenses dir
 
 You can use these licenses with an AWS or Azure subscription. For example, if you have 25 sync relationships, you can pay for the first 20 sync relationships using a license and then pay-as-you-go from AWS or Azure with the remaining 5 sync relationships.
 
-link:task-sync-licensing.html[Learn how to purchase licenses and add them to Cloud Sync].
+link:task-licensing.html[Learn how to purchase licenses and add them to Cloud Sync].
 
 === License terms
 

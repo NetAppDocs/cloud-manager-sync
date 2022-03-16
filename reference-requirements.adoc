@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: reference-sync-requirements.html
+permalink: reference-requirements.html
 keywords: networking, nfs, cifs, smb, version, connection, google, gcp, azure, blob, service account, resource, permissions, networking, version, ntp, network, protocol, aws efs requirements, efs requirements, s3 requirements, azure blob requirements, blob requirements, azure netapp files, cifs requirements, smb requirements, cloud volumes service, google cloud storage, gcp, ibm cloud object storage, storagegrid, storage tier, blob storage tier, storage class, s3 storage class, nfs versions, smb versions, box
 summary: Verify that your source and targets meet the following requirements.
 ---
@@ -49,8 +49,8 @@ Make sure that your Amazon S3 bucket meets the following requirements.
 
 Sync relationships that include S3 storage require a data broker deployed in AWS or on your premises. In either case, Cloud Sync prompts you to associate the data broker with an AWS account during installation.
 
-* link:task-sync-installing-aws.html[Learn how to deploy the AWS data broker]
-* link:task-sync-installing-linux.html[Learn how to install the data broker on a Linux host]
+* link:task-installing-aws.html[Learn how to deploy the AWS data broker]
+* link:task-installing-linux.html[Learn how to install the data broker on a Linux host]
 
 === Supported AWS regions
 
@@ -129,7 +129,7 @@ https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-ser
 ** Transferrer Processes Limit
 
 +
-link:task-sync-managing-data-brokers.html#define-a-unified-configuration-for-a-data-broker-group[Learn how to define a unified configuration for a data broker group^].
+link:task-managing-data-brokers.html#define-a-unified-configuration-for-a-data-broker-group[Learn how to define a unified configuration for a data broker group^].
 
 == [[google]]Google Cloud Storage bucket requirements
 
@@ -139,8 +139,8 @@ Make sure that your Google Cloud Storage bucket meets the following requirements
 
 Sync relationships that include Google Cloud Storage require a data broker deployed in Google Cloud or on your premises. Cloud Sync guides you through the data broker installation process when you create a sync relationship.
 
-* link:task-sync-installing-gcp.html[Learn how to deploy the Google Cloud data broker]
-* link:task-sync-installing-linux.html[Learn how to install the data broker on a Linux host]
+* link:task-installing-gcp.html[Learn how to deploy the Google Cloud data broker]
+* link:task-installing-linux.html[Learn how to install the data broker on a Linux host]
 
 === Supported GCP regions
 
@@ -148,7 +148,7 @@ All regions are supported.
 
 === Permissions for buckets in other Google Cloud projects
 
-When setting up a sync relationship, you can choose from Google Cloud buckets in different projects, if you provide the required permissions to the data broker's service account. link:task-sync-installing-gcp.html[Learn how to set up the service account].
+When setting up a sync relationship, you can choose from Google Cloud buckets in different projects, if you provide the required permissions to the data broker's service account. link:task-installing-gcp.html[Learn how to set up the service account].
 
 === Permissions for a SnapMirror destination
 
@@ -171,7 +171,7 @@ If the sync relationship includes Cloud Volumes ONTAP or an on-prem ONTAP cluste
 
 == ONTAP S3 Storage requirements
 
-When you set up a sync relationship that includes http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html[ONTAP S3 Storage^], you'll need to provide the following:
+When you set up a sync relationship that includes https://docs.netapp.com/us-en/ontap/object-storage-management/index.html[ONTAP S3 Storage^], you'll need to provide the following:
 
 * The IP address of the LIF that's connected to ONTAP S3
 * The access key and secret key that ONTAP is configured to use

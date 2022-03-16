@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-copying-acls.html
+permalink: task-copying-acls.html
 keywords: permissions, access control list, acls, ntfs, cifs, smb, shares, robocopy, copy, transfer, activate, operating system, os, ram, cpu, networking, copy acls to the target
 summary: Cloud Sync can copy access control lists (ACLs) between a source SMB share and a target SMB share, and from a source SMB share to object storage (except for ONTAP S3).
 ---
@@ -28,7 +28,7 @@ Copy ACLs from an SMB server by enabling a setting when you create a relationshi
 
 .What you'll need
 
-This feature works with _any_ type of data broker: the AWS, Azure, Google Cloud Platform, or on-prem data broker. The on-prem data broker can run link:task-sync-installing-linux.html[any supported operating system].
+This feature works with _any_ type of data broker: the AWS, Azure, Google Cloud Platform, or on-prem data broker. The on-prem data broker can run link:task-installing-linux.html[any supported operating system].
 
 .Steps for a new relationship
 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-creating-relationships.html
+permalink: task-creating-relationships.html
 keywords: sync, relationship, create, tags, settings, create a relationship, creating relationships, bucket setup, tags
 summary: When you create a sync relationship, the Cloud Sync service copies files from the source to the target. After the initial copy, the service syncs any changed data every 24 hours.
 ---
@@ -66,10 +66,10 @@ image:screenshot_nfs_to_s3.png[A screenshot that shows NFS as a source and S3 as
 +
 For more details, refer to the following pages:
 +
-* link:task-sync-installing-aws.html[Create a data broker in AWS]
-* link:task-sync-installing-azure.html[Create a data broker in Azure]
-* link:task-sync-installing-gcp.html[Create a data broker in Google Cloud]
-* link:task-sync-installing-linux.html[Installing the data broker on a Linux host]
+* link:task-installing-aws.html[Create a data broker in AWS]
+* link:task-installing-azure.html[Create a data broker in Azure]
+* link:task-installing-gcp.html[Create a data broker in Google Cloud]
+* link:task-installing-linux.html[Installing the data broker on a Linux host]
 
 . After you install the data broker, click *Continue*.
 +
@@ -84,12 +84,12 @@ NOTE: If you want to sync more than one directory on the NFS server, then you mu
 . On the *AWS S3 Bucket* page, select a bucket:
 +
 * Drill down to select an existing folder within the bucket or to select a new folder that you create inside the bucket.
-* Click *Add to the list* to select an S3 bucket that is not associated with your AWS account. link:reference-sync-requirements.html#s3[Specific permissions must be applied to the S3 bucket].
+* Click *Add to the list* to select an S3 bucket that is not associated with your AWS account. link:reference-requirements.html#s3[Specific permissions must be applied to the S3 bucket].
 
 . On the *Bucket Setup* page, set up the bucket:
 +
 * Choose whether to enable S3 bucket encryption and then select an AWS KMS key, enter the ARN of a KMS key, or select AES-256 encryption.
-* Select an S3 storage class. link:reference-sync-requirements.html#storage-classes[View the supported storage classes].
+* Select an S3 storage class. link:reference-requirements.html#storage-classes[View the supported storage classes].
 +
 image:screenshot_bucket_setup.gif[This screenshot shows the Bucket Setup page which enables you to choose Yes or No for encryption and to select a specific S3 storage class for the synced data.]
 

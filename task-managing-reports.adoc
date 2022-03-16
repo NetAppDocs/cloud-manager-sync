@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-sync-managing-reports.html
+permalink: task-managing-reports.html
 keywords: reports, sync reports, cloud sync reports, report errors, path reports
 summary: Create and view reports to get information that you can use with the help of NetApp personnel to tune a data broker’s configuration and improve performance.
 ---
