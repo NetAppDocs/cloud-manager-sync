@@ -35,7 +35,7 @@ sidebar:
               url: /task-installing-aws.html
             - title: Install in Azure
               url: /task-installing-azure.html
-            - title: Install in GCP
+            - title: Install in Google Cloud
               url: /task-installing-gcp.html
             - title: Install on a Linux host
               url: /task-installing-linux.html
