@@ -55,7 +55,7 @@ Complete the steps until you reach the *Data Broker Group* page.
 
 . On the *Data Broker Group* page, click *Create Data Broker* and then select *Microsoft Azure*.
 +
-image:screenshot-azure.png["A screenshot of the Data Broker page that enables you to choose between an AWS, Azure, GCP, and On-Prem data broker."]
+image:screenshot-azure.png["A screenshot of the Data Broker page that enables you to choose between an AWS, Azure, Google Cloud, and On-Prem data broker."]
 
 . Enter a name for the data broker and click *Continue*.
 

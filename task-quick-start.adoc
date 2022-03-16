@@ -30,7 +30,7 @@ Cloud Sync guides you through the installation process when you create a sync re
 [role="quick-margin-list"]
 * link:task-installing-aws.html[Review AWS installation]
 * link:task-installing-azure.html[Review Azure installation]
-* link:task-installing-gcp.html[Review GCP installation]
+* link:task-installing-gcp.html[Review Google Cloud installation]
 * link:task-installing-linux.html[Review Linux host installation]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create your first sync relationship

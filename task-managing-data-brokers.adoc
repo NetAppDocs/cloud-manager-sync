@@ -58,7 +58,7 @@ link:task-creating-relationships.html[Learn how to create a new data broker when
 
 * If you want to create a data broker in an existing group, the data broker must be an on-prem data broker or the same type of data broker.
 +
-For example, if a group includes an AWS data broker, then you can create an AWS data broker or on-prem data broker in that group. You can't create an Azure data broker or GCP data broker because they aren't the same data broker type.
+For example, if a group includes an AWS data broker, then you can create an AWS data broker or on-prem data broker in that group. You can't create an Azure data broker or Google Cloud data broker because they aren't the same data broker type.
 
 .Steps to create a data broker in a new group
 
