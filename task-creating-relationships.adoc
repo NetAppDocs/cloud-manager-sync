@@ -34,7 +34,7 @@ If you want to create sync relationships for any of the following, then you firs
 * https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html[Setting up and discovering Azure NetApp Files^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html[Launching Cloud Volumes ONTAP in AWS^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html[Launching Cloud Volumes ONTAP in Azure^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html[Launching Cloud Volumes ONTAP in GCP]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html[Launching Cloud Volumes ONTAP in GCP^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-ontap-cloud.html[Adding existing Cloud Volumes ONTAP systems^]
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[Discovering ONTAP clusters^]
 
