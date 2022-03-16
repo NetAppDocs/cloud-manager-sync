@@ -67,7 +67,7 @@ If you have not yet deployed a data broker, review the data broker requirements.
 +
 ** link:task-installing-aws.html[Review AWS installation]
 ** link:task-installing-azure.html[Review Azure installation]
-** link:task-installing-gcp.html[Review GCP installation]
+** link:task-installing-gcp.html[Review Google Cloud installation]
 ** link:task-installing-linux.html[Review Linux host installation]
 
 == Syncing NFS data using data-in-flight encryption

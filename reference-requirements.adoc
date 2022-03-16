@@ -142,7 +142,7 @@ Sync relationships that include Google Cloud Storage require a data broker deplo
 * link:task-installing-gcp.html[Learn how to deploy the Google Cloud data broker]
 * link:task-installing-linux.html[Learn how to install the data broker on a Linux host]
 
-=== Supported GCP regions
+=== Supported Google Cloud regions
 
 All regions are supported.
 
