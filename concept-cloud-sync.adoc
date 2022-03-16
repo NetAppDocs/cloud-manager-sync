@@ -54,7 +54,7 @@ Cloud Sync supports the following storage types:
 * SFTP (using API only)
 * StorageGRID
 
-link:reference-requirements.html[Review the supported sync relationships].
+link:reference-supported-relationships.html[View the supported sync relationships].
 
 == Costs
 

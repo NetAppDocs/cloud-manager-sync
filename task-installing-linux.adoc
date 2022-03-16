@@ -51,9 +51,13 @@ If you plan to use the data broker with a sync relationship that includes an S3 
 
 .Steps
 
-. Create an IAM policy using https://s3.amazonaws.com/metadata.datafabric.io/docs/on_prem_iam_policy.json[this NetApp-provided policy^]. https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[View AWS instructions^].
+. Create an IAM policy using https://s3.amazonaws.com/metadata.datafabric.io/docs/on_prem_iam_policy.json[this NetApp-provided policy^]
++
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[View AWS instructions^]
 
-. Create an IAM user that has programmatic access. https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html[View AWS instructions^].
+. Create an IAM user that has programmatic access.
++
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html[View AWS instructions^]
 +
 Be sure to copy the AWS keys because you need to specify them when you install the data broker software.
 
@@ -65,7 +69,9 @@ If you plan to use the data broker with a sync relationship that includes a Goog
 
 . Create a GCP service account that has Storage Admin permissions, if you don't already have one.
 
-. Create a service account key saved in JSON format. https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys[View GCP instructions^].
+. Create a service account key saved in JSON format.
++
+https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys[View GCP instructions^]
 +
 The file should contain at least the following properties: "project_id", "private_key", and "client_email"
 +
