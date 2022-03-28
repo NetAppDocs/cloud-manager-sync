@@ -178,7 +178,7 @@ Post the relationship using the Cloud Sync REST API.
  x-netapp-external-request-id-trg: request ID as part of path for target credentials
  Body: post relationship v2 body
 
-* To obtain a user token and your Cloud Central account ID, https://docs.netapp.com/us-en/cloudsync/reference_apis.html[refer to this page in the documentation^].
+* To obtain a user token and your Cloud Central account ID, link:api-sync.html[refer to this page in the documentation^].
 
 * To build a body for your post relationship, https://api.cloudsync.netapp.com/docs/#/Relationships-v2/post_relationships_v2[refer to the relationships-v2 API call^].
 
