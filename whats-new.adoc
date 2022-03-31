@@ -1,0 +1,285 @@
+---
+sidebar: sidebar
+permalink: whats-new.html
+keywords: what's new, features, new, release notes, enhancements, fixes
+summary: Learn what's new in Cloud Sync.
+---
+
+= What's new with Cloud Sync
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Learn what's new in Cloud Sync.
+
+// tag::whats-new[]
+== 03 Mar 2022
+
+=== Sorting in the dashboard
+
+You now sort the dashboard by sync relationship name.
+
+image:screenshot-sync-sort.png[A screenshot that shows the Sort by name option that is available from the dashboard.]
+
+=== Enhancement to Data Sense integration
+
+In the previous release, we introduced Cloud Sync integration with Cloud Data Sense. In this update, we enhanced the integration by making it easier to create the sync relationship. After you initiate a data sync from Cloud Data Sense, all of the source information is contained in a single step and only requires you to enter a few key details.
+
+image:screenshot-sync-data-sense.png[A screenshot that shows the Data Sense Integration page that appears after starting a new sync directly from Cloud Data Sense.]
+
+== 06 Feb 2022
+
+=== Enhancement to data broker groups
+
+We changed how you interact with data brokers by emphasizing data broker _groups_.
+
+For example, when you create a new sync relationship, you select the data broker _group_ to use with the relationship, rather than a specific data broker.
+
+image:screenshot-sync-select-data-broker-group.png[A screenshot of the Sync Relationship wizard that shows the data broker group selection.]
+
+In the *Manage Data Brokers* tab, we also show the number of sync relationships that a data broker group is managing.
+
+image:screenshot-sync-group-relationships.png["A screenshot of the Manage Data Brokers page that shows a data broker group and details about that group, including the number of relationships that it's managing."]
+
+=== Download PDF reports
+
+You can now download a PDF of a report.
+
+link:task-managing-reports.html[Learn about reports].
+
+== 02 Jan 2022
+
+=== New Box sync relationships
+
+Two new sync relationships are supported:
+
+* Box to Azure NetApp Files
+* Box to Amazon FSx for ONTAP
+
+link:reference-supported-relationships.html[View the list of supported sync relationships].
+
+=== Relationship names
+
+You can now provide a meaningful name to each of your sync relationships to more easily identify the purpose of each relationship. You can add the name when you create the relationship and any time after.
+
+image:screenshot-sync-relationship-edit-name.png[A screenshot of a sync relationship that shows the edit button that's next to the name of a relationship.]
+
+=== S3 private links
+
+When you sync data to or from Amazon S3, you can choose whether to use an S3 private link. When the data broker copies data from the source to the target, it goes through the private link.
+
+Note that the IAM role associated with your data broker will need the following permission to use this feature:
+
+[source,json]
+"ec2:DescribeVpcEndpoints"
+
+This permission is automatically added to any new data brokers that you create.
+
+=== Glacier Instant Retrieval
+
+You can now choose the _Glacier Instant Retrieval_ storage class when Amazon S3 is the target in a sync relationship.
+
+=== ACLs from object storage to SMB shares
+
+Cloud Sync now supports copying ACLs from object storage to SMB shares. Previously, we only supported copying ACLs from an SMB share to object storage.
+
+=== SFTP to S3
+
+Creating a sync relationship from SFTP to Amazon S3 is now supported in the user interface. This sync relationship was previously supported with the API only.
+
+=== Table view enhancement
+
+We redesigned the table view on the Dashboard for ease of use. If you click *More info*, Cloud Sync filters the dashboard to show you more information about that specific relationship.
+
+image:screenshot-sync-table.png[A screenshot of the table view in the Dashboard.]
+
+=== Support for Jarkarta region
+
+Cloud Sync now supports deploying the data broker in the AWS Asia Pacific (Jakarta) region.
+// end::whats-new[]
+
+== 28 Nov 2021
+
+=== ACLs from SMB to object storage
+
+Cloud Sync can now copy access control lists (ACLs) when setting up a sync relationship from a source SMB share to object storage (except for ONTAP S3).
+
+Cloud Sync doesn't support copying ACLs from object storage to SMB shares.
+
+link:task-copying-acls.html[Learn how to copy ACLs from an SMB share].
+
+=== Update licenses
+
+You can now update Cloud Sync licenses that you extended.
+
+If you extended a Cloud Sync license that you purchased from NetApp, you can add the license again to refresh the expiration date.
+
+link:task-licensing.html#update-a-license[Learn how to update a license].
+
+=== Update Box credentials
+
+You can now update the Box credentials for an existing sync relationship.
+
+link:task-managing-relationships.html[Learn how to update credentials].
+
+== 31 Oct 2021
+
+=== Box support
+
+Box support is now available in the Cloud Sync user interface as a preview.
+
+Box can be the source or target in several types of sync relationships. link:reference-supported-relationships.html[View the list of supported sync relationships].
+
+=== Date Created setting
+
+When an SMB server is the source, a new sync relationship setting called _Date Created_ enables you to sync files that were created after a specific date, before a specific date, or between a specific time range.
+
+link:task-managing-relationships.html[Learn more about Cloud Sync settings].
+
+== 04 Oct 2021
+
+=== Additional Box support
+
+Cloud Sync now supports additional sync relationships for https://www.box.com/home[Box^] when using the Cloud Sync API:
+
+* Amazon S3 to Box
+* IBM Cloud Object Storage to Box
+* StorageGRID to Box
+* Box to an NFS server
+* Box to an SMB server
+
+link:api-sync.html[Learn how to set up a sync relationship using the API].
+
+=== Reports for SFTP paths
+
+* You can now link:task-managing-reports.html[create a report] for SFTP paths.
+
+== 02 Sept 2021
+
+=== Support for FSx for ONTAP
+
+You can now sync data to or from an Amazon FSx for ONTAP file system.
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html[Learn about Amazon FSx for ONTAP^]
+* link:reference-requirements.html[View supported sync relationships]
+* link:task-creating-relationships.html[Learn how to create a sync relationship for Amazon FSx for ONTAP]
+
+== 01 Aug 2021
+
+=== Update credentials
+
+Cloud Sync now enables you to update the data broker with the latest credentials of the source or target in an existing sync relationship.
+
+This enhancement can help if your security policies require you to update credentials on a periodic basis. link:task-managing-relationships.html[Learn how to update credentials].
+
+image:screenshot_sync_update_credentials.png[A screenshot that shows the Update Credentials option on the Sync Relationships page just under the name of the source or target.]
+
+=== Tags for object storage targets
+
+When creating a sync relationship, you can now add tags to the object storage target in a sync relationship.
+
+Adding tags is supported with Amazon S3, Azure Blob, Google Cloud Storage, IBM Cloud Object Storage, and StorageGRID.
+
+image:screenshot_sync_tags.png[A screenshot that shows the page in the working environment wizard that enables you to add relationship tags to the object storage target in the relationship.]
+
+=== Support for Box
+
+Cloud Sync now supports https://www.box.com/home[Box^] as the source in a sync relationship to Amazon S3, StorageGRID, and IBM Cloud Object Storage when using the Cloud Sync API.
+
+link:api-sync.html[Learn how to set up a sync relationship using the API].
+
+=== Public IP for data broker in Google Cloud
+
+When you deploy a data broker in Google Cloud, you can now choose whether to enable or disable a public IP address for the virtual machine instance.
+
+link:task-installing-gcp.html[Learn how to deploy a data broker in Google Cloud].
+
+=== Dual-protocol volume for Azure NetApp Files
+
+When you choose the source or target volume for Azure NetApp Files, Cloud Sync now displays a dual-protocol volume no matter which protocol you chose for the sync relationship.
+
+== 07 July 2021
+
+=== ONTAP S3 Storage and Google Cloud Storage
+
+Cloud Sync now supports sync relationships between ONTAP S3 Storage and a Google Cloud Storage bucket from the user interface.
+
+link:reference-supported-relationships.html[View the list of supported sync relationships].
+
+=== Object metadata tags
+
+Cloud Sync can now copy object metadata and tags between object-based storage when you create a sync relationship and enable a setting.
+
+link:task-creating-relationships.html#settings[Learn more about the Copy for Objects setting].
+
+=== Support for HashiCorp Vaults
+
+You can now set up the data broker to access credentials from an external HashiCorp Vault by authenticating with a Google Cloud service account.
+
+link:task-external-vault.html[Learn more about using a HashiCorp Vault with a data broker].
+
+=== Define tags or metadata for S3 bucket
+
+When setting up a sync relationship to an Amazon S3 bucket, the Sync Relationship wizard now enables you to define the tags or metadata that you want to save on the objects in the target S3 bucket.
+
+The tagging option was previously part of the sync relationship's settings.
+
+== 07 June 2021
+
+=== Storage classes in Google Cloud
+
+When a Google Cloud Storage bucket is the target in a sync relationship, you can now choose the storage class that you want to use. Cloud Sync supports the following storage classes:
+
+* Standard
+* Nearline
+* Coldline
+* Archive
+
+== 02 May 2021
+
+=== Errors in reports
+
+You can now view the errors found in reports and you can delete the last report or all reports.
+
+link:task-managing-reports.html[Learn more about creating and viewing reports to tune your configuration].
+
+=== Compare attributes
+
+A new *Compare by* setting is now available for each sync relationship.
+
+This advanced setting enables you to choose whether Cloud Sync should compare certain attributes when determining whether a file or directory has changed and should be synced again.
+
+link:task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
+
+== 11 Apr 2021
+
+=== Standalone Cloud Sync service is retired
+
+The standalone Cloud Sync service has been retired. You should now access Cloud Sync directly from Cloud Manager where all of the same features and functionality are available.
+
+After logging in to Cloud Manager, you can switch to the Sync tab at the top and view your relationships, just like before.
+
+=== Google Cloud buckets in different projects
+
+When setting up a sync relationship, you can choose from Google Cloud buckets in different projects, if you provide the required permissions to the data broker's service account.
+
+link:task-installing-gcp.html[Learn how to set up the service account].
+
+=== Metadata between Google Cloud Storage and S3
+
+Cloud Sync now copies metadata between Google Cloud Storage and S3 providers (AWS S3, StorageGRID, and IBM Cloud Object Storage).
+
+=== Restart data brokers
+
+You can now restart a data broker from Cloud Sync.
+
+image:screenshot_sync_restart_data_broker.gif[A screenshot that shows the Restart Data Broker action from the Manage Data Brokers page.]
+
+=== Message when not running the latest release
+
+Cloud Sync now identifies when a data broker isn't running the latest software release. This message can help to ensure that you're getting the latest features and functionalities.
+
+image:screenshot_sync_warning.gif[A screenshot that shows a warning when viewing a data broker on the Dashboard.]
