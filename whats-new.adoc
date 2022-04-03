@@ -50,7 +50,7 @@ You can now download a PDF of a report.
 
 link:task-managing-reports.html[Learn about reports].
 
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html[Learn about reports].
+https://review.docs.netapp.com/us-en/cloud-manager-sync_setup/task-managing-reports.html[Learn about reports].
 
 == 02 Jan 2022
 
