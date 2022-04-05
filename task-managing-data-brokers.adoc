@@ -16,13 +16,9 @@ summary: A data broker syncs data from a source location to a target location. A
 [.lead]
 A data broker group syncs data from a source location to a target location. At least one data broker is required in a group for each sync relationship that you create. Manage data broker groups by adding a new data broker to a group, by viewing information about groups, and more.
 
-== Data broker groups
+== How data broker groups work
 
-Grouping data brokers together can help improve the performance of sync relationships.
-
-=== Determining the number of data brokers in a group
-
-In many cases, a single data broker can meet the performance requirements for a sync relationship. If it doesn’t, you can accelerate sync performance by adding additional data brokers to the group. But you should first check other factors that can impact sync performance. link:faq.html#how-many-data-brokers-are-required-in-a-group[Learn more about how to determine when multiple data brokers are required].
+A data broker group can include one or more data brokers. Grouping data brokers together can help improve the performance of sync relationships.
 
 === Groups can manage several relationships
 
@@ -36,11 +32,22 @@ For example, let's say you have three relationships:
 
 You want to accelerate the performance of relationship 1 so you add a new data broker to data broker group A. Because group A also manages sync relationship 3, the sync performance for relationship is automatically accelerated as well.
 
-=== New data brokers only
+=== Number of data brokers in a group
 
-You can only add new data brokers to a group. You can't add existing data brokers to a group.
+In many cases, a single data broker can meet the performance requirements for a sync relationship. If it doesn’t, you can accelerate sync performance by adding additional data brokers to the group. But you should first check other factors that can impact sync performance. link:faq.html#how-many-data-brokers-are-required-in-a-group[Learn more about how to determine when multiple data brokers are required].
 
-== Add a new data broker
+== Security recommendations
+
+To ensure the security of your data broker machine, NetApp recommends the following:
+
+*	SSH should not permit X11 Forwarding
+*	SSH should not permit TCP connection forwarding
+*	SSH should not permit tunnels
+*	SSH should not accept client environment variables
+
+These security recommendations can help prevent unauthorized connections to the data broker machine.
+
+== Add a new data broker to a group
 
 There are several ways to create a new data broker:
 
@@ -52,7 +59,7 @@ link:task-creating-relationships.html[Learn how to create a new data broker when
 
 * From the *Manage Data Brokers* page by creating a new data broker in an existing group
 
-.Things you should know
+.Before you get started
 
 * You can't add data brokers to a group that manages an encrypted sync relationship.
 
@@ -81,7 +88,7 @@ For help, refer to the following pages:
 
 . Click the action menu and select *Add Data Broker*.
 +
-image:screenshot_sync_group_add.gif[A screenshot of the action menu that's available for each individual data broker in a group.]
+image:screenshot_sync_group_add.png[A screenshot of the action menu that's available for each individual data broker in a group.]
 
 . Follow the prompts to create the data broker in the group.
 +
@@ -92,16 +99,97 @@ For help, refer to the following pages:
 * link:task-installing-gcp.html[Create a data broker in Google Cloud]
 * link:task-installing-linux.html[Installing the data broker on a Linux host]
 
-== Security recommendations
+== Edit a group's name
 
-To ensure the security of your data broker machine, NetApp recommends the following:
+Change the name of a data broker group at any time.
 
-*	SSH should not permit X11 Forwarding
-*	SSH should not permit TCP connection forwarding
-*	SSH should not permit tunnels
-*	SSH should not accept client environment variables
+.Steps
 
-These security recommendations can help prevent unauthorized connections to the data broker machine.
+. Click *Sync > Manage Data Brokers*.
+
+. Click the action menu and select *Edit Group Name*.
++
+image:screenshot_sync_group_edit.gif[A screenshot of the action menu that's available for each individual data broker in a group.]
+
+. Enter a new name and click *Save*.
+
+.Result
+
+Cloud Sync updates the name of the data broker group.
+
+== Set up a unified configuration
+
+If a sync relationship encounters errors during the sync process, unifying the concurrency of the data broker group can help to decrease the number of sync errors. Be aware that changes to the group's configuration can affect performance by slowing down the transfer.
+
+We don't recommend changing the configuration on your own. You should consult with NetApp to understand when to change the configuration and how to change it.
+
+.Steps
+
+. Click *Manage Data Brokers*.
+
+. Click the Settings icon for a data broker group.
++
+image:screenshot_sync_group_settings.png[A screenshot that shows the Settings icon for a data broker group.]
+
+. Change the settings as needed and then click *Unify Configuration*.
++
+Note the following:
++
+* You can pick and choose which settings to change--you don't need to change all four at once.
+* After a new configuration is sent to a data broker, the data broker automatically restarts and uses the new configuration.
+* It can take up to a minute until this change takes place and is visible in the Cloud Sync interface.
+* If a data broker isn't running, it's configuration won't change because Cloud Sync can't communicate with it. The configuration will change after the data broker restarts.
+* After you set a unified configuration, any new data brokers will automatically use the new configuration.
+
+== Move data brokers between groups
+
+Move a data broker from one group to another group if you need to accelerate the performance of the target data broker group.
+
+For example, if a data broker is no longer managing a sync relationship, you can easily move it to another group that is managing sync relationships.
+
+.Limitations
+
+* If a data broker group is managing a sync relationship and there's only one data broker in the group, then you can't move that data broker to another group.
+* You can't move a data broker to or from a group that manages encrypted sync relationships.
+* You can't move a data broker that is currently being deployed.
+
+.Steps
+
+. Click *Sync > Manage Data Brokers*.
+
+. Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
+
+. Click the action menu for a data broker and select *Move Data Broker*.
++
+image:screenshot_sync_group_remove.png[A screenshot of the action menu that's available for each individual data broker group.]
+
+. Create a new data broker group or select an existing data broker group.
+
+. Click *Move*.
+
+.Result
+
+Cloud Sync moves the data broker to a new or existing data broker group. If there are no other data brokers in the previous group, then Cloud Sync deletes it.
+
+== Update proxy configuration
+
+Update the proxy configuration for a data broker by adding details about a new proxy configuration or by editing the existing proxy configuration.
+
+.Steps
+
+. Click *Sync > Manage Data Brokers*.
+
+. Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand the list of data brokers in a group.] to expand the list of data brokers in a group.
+
+. Click the action menu for a data broker and select *Edit Proxy Configuration*.
+
+. Specify details about the proxy: host name, port number, user name, and password.
+
+. Click *Update*.
+
+.Result
+
+Cloud Sync updates the data broker to use the proxy configuration for internet access.
 
 == View a data broker's configuration
 
@@ -126,6 +214,22 @@ TIP: The scanner scans the source and target and decides what should be copied. 
 . Click image:screenshot_sync_group_expand.gif[A screenshot of the button that enables you to expand details about a data broker.] to view details about a data broker.
 +
 image:screenshot_sync_data_broker_details.gif[A screenshot of information about a data broker.]
+
+== Address issues with a data broker
+
+Cloud Sync displays a status for each data broker that can help you troubleshoot issues.
+
+.Steps
+
+. Identify any data brokers that have a status of "Unknown" or "Failed."
++
+image:screenshot_sync_broker_status.gif[]
+
+. Hover over the image:screenshot_sync_status_icon.gif[] icon to see the failure reason.
+
+. Correct the issue.
++
+For example, you might need to simply restart the data broker if it's offline, or you might need to remove data broker if the initial deployment failed.
 
 == Remove a data broker from a group
 
@@ -152,60 +256,22 @@ image:screenshot_sync_group_remove.gif[A screenshot of the action menu that's av
 
 Cloud Sync removes the data broker from the group.
 
-== Edit a group's name
+== Delete a data broker group
 
-Change the name of a data broker group at any time.
+If a data broker group no longer manages any sync relationships, you can delete the group, which removes all of the data brokers from Cloud Sync.
+
+Data brokers that Cloud Sync removes are only deleted from Cloud Sync's records. You'll need to manually delete the data broker instance from your cloud provider and any additional cloud resources.
 
 .Steps
 
 . Click *Sync > Manage Data Brokers*.
 
-. Click the action menu and select *Edit Group Name*.
+. Click the action menu and select *Delete Group*.
 +
-image:screenshot_sync_group_edit.gif[A screenshot of the action menu that's available for each individual data broker in a group.]
+image:screenshot_sync_group_add.png[A screenshot of the action menu that's available for each individual data broker in a group.]
 
-. Enter a new name and click *Save*.
+. To confirm, enter the name of the group and click *Delete Group*.
 
 .Result
 
-Cloud Sync updates the name of the data broker group.
-
-== Address issues with a data broker
-
-Cloud Sync displays a status for each data broker that can help you troubleshoot issues.
-
-.Steps
-
-. Identify any data brokers that have a status of "Unknown" or "Failed."
-+
-image:screenshot_sync_broker_status.gif[]
-
-. Hover over the image:screenshot_sync_status_icon.gif[] icon to see the failure reason.
-
-. Correct the issue.
-+
-For example, you might need to simply restart the data broker if it's offline, or you might need to remove data broker if the initial deployment failed.
-
-== Define a unified configuration for a data broker group
-
-If a sync relationship encounters errors during the sync process, unifying the concurrency of the data broker group can help to decrease the number of sync errors. Be aware that changes to the group's configuration can affect performance by slowing down the transfer.
-
-We don't recommend changing the configuration on your own. You should consult with NetApp to understand when to change the configuration and how to change it.
-
-.Steps
-
-. Click *Manage Data Brokers*.
-
-. Click the Settings icon for a data broker group.
-+
-image:screenshot_sync_group_settings.png[A screenshot that shows the Settings icon for a data broker group.]
-
-. Change the settings as needed and then click *Unify Configuration*.
-+
-Note the following:
-+
-* You can pick and choose which settings to change--you don't need to change all four at once.
-* After a new configuration is sent to a data broker, the data broker automatically restarts and uses the new configuration.
-* It can take up to a minute until this change takes place and is visible in the Cloud Sync interface.
-* If a data broker isn't running, it's configuration won't change because Cloud Sync can't communicate with it. The configuration will change after the data broker restarts.
-* After you set a unified configuration, any new data brokers will automatically use the new configuration.
+Cloud Sync removes the data brokers and deletes the group.

@@ -157,7 +157,10 @@ If the source for a sync relationship is a SnapMirror destination (which is read
 == NFS server requirements
 
 * The NFS server can be a NetApp system or a non-NetApp system.
-* The file server must allow a data broker host to access the exports.
+* The file server must allow a data broker host to access the exports over the required ports.
+** 111 TCP/UDP
+** 2049 TCP/UDP
+** 5555 TCP/UDP
 * NFS versions 3, 4.0, 4.1, and 4.2 are supported.
 +
 The desired version must be enabled on the server.
@@ -184,7 +187,10 @@ When you set up a sync relationship that includes https://docs.netapp.com/us-en/
 +
 Members of the Backup Operators group are supported with a source SMB server.
 ** For a target SMB server, the following permissions are required: list, read, and write.
-* The file server must allow a data broker host to access the exports.
+* The file server must allow a data broker host to access the exports over the required ports.
+** 139 TCP
+** 445 TCP
+** 137-138 UDP
 * SMB versions 1.0, 2.0, 2.1, 3.0 and 3.11 are supported.
 * Grant the "Administrators" group with "Full Control" permissions to the source and target folders.
 +

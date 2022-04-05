@@ -16,7 +16,25 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
-== 03 Mar 2022
+== 3 Apr 2022
+
+=== Data broker group enhancements
+
+We made several enhancements to data broker groups:
+
+* You can now move a data broker to a new or existing group.
+
+* You can now update the proxy configuration for a data broker.
+
+* Finally, you can also delete data broker groups.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task_sync_managing_data_brokers.html[Learn how to manage data broker groups].
+
+* You can now filter the contents of the Sync Dashboard to more easily find sync relationships that match a certain status. For example, you can filter on sync relationships that have a failed status
++
+image:screenshot-sync-filter.png[A screenshot that shows the Filter by sync status option at the top of the dashboard.]
+
+== 3 Mar 2022
 
 === Sorting in the dashboard
 
@@ -48,7 +66,8 @@ image:screenshot-sync-group-relationships.png["A screenshot of the Manage Data B
 
 You can now download a PDF of a report.
 
-link:task-managing-reports.html[Learn about reports].
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html[Learn more about reports].
+// end::whats-new[]
 
 == 02 Jan 2022
 
@@ -99,7 +118,6 @@ image:screenshot-sync-table.png[A screenshot of the table view in the Dashboard.
 === Support for Jarkarta region
 
 Cloud Sync now supports deploying the data broker in the AWS Asia Pacific (Jakarta) region.
-// end::whats-new[]
 
 == 28 Nov 2021
 
