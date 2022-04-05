@@ -16,7 +16,7 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
-== 3 Apr 2022
+== 3 April 2022
 
 === Data broker group enhancements
 
@@ -30,25 +30,27 @@ We made several enhancements to data broker groups:
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task_sync_managing_data_brokers.html[Learn how to manage data broker groups].
 
-* You can now filter the contents of the Sync Dashboard to more easily find sync relationships that match a certain status. For example, you can filter on sync relationships that have a failed status
-+
-image:screenshot-sync-filter.png[A screenshot that shows the Filter by sync status option at the top of the dashboard.]
+=== Dashboard filter
 
-== 3 Mar 2022
+You can now filter the contents of the Sync Dashboard to more easily find sync relationships that match a certain status. For example, you can filter on sync relationships that have a failed status
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png[A screenshot that shows the Filter by sync status option at the top of the dashboard.]
+
+== 3 March 2022
 
 === Sorting in the dashboard
 
 You now sort the dashboard by sync relationship name.
 
-image:screenshot-sync-sort.png[A screenshot that shows the Sort by name option that is available from the dashboard.]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-sort.png[A screenshot that shows the Sort by name option that is available from the dashboard.]
 
 === Enhancement to Data Sense integration
 
 In the previous release, we introduced Cloud Sync integration with Cloud Data Sense. In this update, we enhanced the integration by making it easier to create the sync relationship. After you initiate a data sync from Cloud Data Sense, all of the source information is contained in a single step and only requires you to enter a few key details.
 
-image:screenshot-sync-data-sense.png[A screenshot that shows the Data Sense Integration page that appears after starting a new sync directly from Cloud Data Sense.]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png[A screenshot that shows the Data Sense Integration page that appears after starting a new sync directly from Cloud Data Sense.]
 
-== 06 Feb 2022
+== 6 February 2022
 
 === Enhancement to data broker groups
 
@@ -56,11 +58,11 @@ We changed how you interact with data brokers by emphasizing data broker _groups
 
 For example, when you create a new sync relationship, you select the data broker _group_ to use with the relationship, rather than a specific data broker.
 
-image:screenshot-sync-select-data-broker-group.png[A screenshot of the Sync Relationship wizard that shows the data broker group selection.]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-select-data-broker-group.png[A screenshot of the Sync Relationship wizard that shows the data broker group selection.]
 
 In the *Manage Data Brokers* tab, we also show the number of sync relationships that a data broker group is managing.
 
-image:screenshot-sync-group-relationships.png["A screenshot of the Manage Data Brokers page that shows a data broker group and details about that group, including the number of relationships that it's managing."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-group-relationships.png["A screenshot of the Manage Data Brokers page that shows a data broker group and details about that group, including the number of relationships that it's managing."]
 
 === Download PDF reports
 
@@ -69,7 +71,7 @@ You can now download a PDF of a report.
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html[Learn more about reports].
 // end::whats-new[]
 
-== 02 Jan 2022
+== 02 January 2022
 
 === New Box sync relationships
 
@@ -119,7 +121,7 @@ image:screenshot-sync-table.png[A screenshot of the table view in the Dashboard.
 
 Cloud Sync now supports deploying the data broker in the AWS Asia Pacific (Jakarta) region.
 
-== 28 Nov 2021
+== 28 November 2021
 
 === ACLs from SMB to object storage
 
@@ -143,7 +145,7 @@ You can now update the Box credentials for an existing sync relationship.
 
 link:task-managing-relationships.html[Learn how to update credentials].
 
-== 31 Oct 2021
+== 31 October 2021
 
 === Box support
 
@@ -157,7 +159,7 @@ When an SMB server is the source, a new sync relationship setting called _Date C
 
 link:task-managing-relationships.html[Learn more about Cloud Sync settings].
 
-== 04 Oct 2021
+== 4 October 2021
 
 === Additional Box support
 
@@ -175,7 +177,7 @@ link:api-sync.html[Learn how to set up a sync relationship using the API].
 
 * You can now link:task-managing-reports.html[create a report] for SFTP paths.
 
-== 02 Sept 2021
+== 2 September 2021
 
 === Support for FSx for ONTAP
 
@@ -185,7 +187,7 @@ You can now sync data to or from an Amazon FSx for ONTAP file system.
 * link:reference-requirements.html[View supported sync relationships]
 * link:task-creating-relationships.html[Learn how to create a sync relationship for Amazon FSx for ONTAP]
 
-== 01 Aug 2021
+== 1 August 2021
 
 === Update credentials
 
@@ -219,7 +221,7 @@ link:task-installing-gcp.html[Learn how to deploy a data broker in Google Cloud]
 
 When you choose the source or target volume for Azure NetApp Files, Cloud Sync now displays a dual-protocol volume no matter which protocol you chose for the sync relationship.
 
-== 07 July 2021
+== 7 July 2021
 
 === ONTAP S3 Storage and Google Cloud Storage
 
@@ -245,7 +247,7 @@ When setting up a sync relationship to an Amazon S3 bucket, the Sync Relationshi
 
 The tagging option was previously part of the sync relationship's settings.
 
-== 07 June 2021
+== 7 June 2021
 
 === Storage classes in Google Cloud
 
@@ -256,7 +258,7 @@ When a Google Cloud Storage bucket is the target in a sync relationship, you can
 * Coldline
 * Archive
 
-== 02 May 2021
+== 2 May 2021
 
 === Errors in reports
 
