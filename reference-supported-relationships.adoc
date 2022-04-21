@@ -103,8 +103,8 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 
 | Box ^1^ a|
 
-* Amazon S3
 * Amazon FSx for ONTAP
+* Amazon S3
 * Azure NetApp Files
 * Cloud Volumes ONTAP
 * IBM Cloud Object Storage
