@@ -59,7 +59,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Amazon S3
 * Azure Blob
 * Azure NetApp Files
-* Box ^2,3^
+* Box ^1^
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud Storage
@@ -101,9 +101,12 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * SMB server
 * StorageGRID
 
-| Box ^2^ a|
+| Box ^1^ a|
 
 * Amazon S3
+* Amazon FSx for ONTAP
+* Azure NetApp Files
+* Cloud Volumes ONTAP
 * IBM Cloud Object Storage
 * NFS server
 * SMB Server
@@ -165,7 +168,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Amazon S3
 * Azure Blob
 * Azure NetApp Files
-* Box ^2,3^
+* Box ^1^
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud Storage
@@ -214,7 +217,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * StorageGRID
 * ONTAP S3 Storage
 
-| SFTP ^1^ | S3
+| SFTP ^2^ | S3
 
 | SMB server a|
 
@@ -240,7 +243,7 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 * Amazon S3
 * Azure Blob
 * Azure NetApp Files
-* Box ^2,3^
+* Box ^1^
 * Cloud Volumes ONTAP
 * Cloud Volumes Service
 * Google Cloud Storage
@@ -255,9 +258,9 @@ Cloud Sync enables you to sync data from a source to a target. This is called a 
 
 Notes:
 
-. Sync relationships with this source/target are supported by using the Cloud Sync API only.
-
 . Box support is available as a preview.
+
+. Sync relationships with this source/target are supported by using the Cloud Sync API only.
 
 . You can choose a specific Azure Blob storage tier when a Blob container is the target:
 +
