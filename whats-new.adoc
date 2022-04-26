@@ -28,9 +28,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.htm
 
 A new *Notifications* setting is now available for sync relationships. This setting enables you to choose whether to receive Cloud Sync notifications in Cloud Manager's Notification Center. You can enable notifications for successful data syncs, failed data syncs, and canceled data syncs.
 
-image:screenshot-notification-center.png[A screenshot that shows the Notification Center in Cloud Manager.]
-
-//image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png[A screenshot that shows the Notification Center in Cloud Manager.]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png[A screenshot that shows the Notification Center in Cloud Manager.]
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
 
