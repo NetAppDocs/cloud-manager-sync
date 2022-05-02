@@ -67,13 +67,13 @@ Note the following key points about using Cloud Sync outside of the cloud:
 * A data broker group needs an internet connection to communicate with the Cloud Sync service.
 * If you don't purchase a license directly from NetApp, you will need an AWS or Azure account for the PAYGO Cloud Sync service billing.
 
-== What's a data broker group?
-
-Each data broker belongs to a data broker group. Grouping data brokers together helps improve the performance of sync relationships.
-
 === How do I access Cloud Sync?
 
 Cloud Sync is available from Cloud Manager in the *Sync* tab.
+
+=== What's a data broker group?
+
+Each data broker belongs to a data broker group. Grouping data brokers together helps improve the performance of sync relationships.
 
 == Supported sources and targets
 
