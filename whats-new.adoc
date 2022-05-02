@@ -16,6 +16,22 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 1 May 2022
+
+=== Sync timeout
+
+A new *Sync Timeout* setting is now available for sync relationships. This setting enables you to define whether Cloud Sync should cancel a data sync if the sync hasn't completed in the specified number of hours or days.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
+
+=== Notifications
+
+A new *Notifications* setting is now available for sync relationships. This setting enables you to choose whether to receive Cloud Sync notifications in Cloud Manager's Notification Center. You can enable notifications for successful data syncs, failed data syncs, and canceled data syncs.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png[A screenshot that shows the Notification Center in Cloud Manager.]
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship[Learn more about changing the settings for a sync relationship].
+
 == 3 April 2022
 
 === Data broker group enhancements
@@ -49,6 +65,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 In the previous release, we introduced Cloud Sync integration with Cloud Data Sense. In this update, we enhanced the integration by making it easier to create the sync relationship. After you initiate a data sync from Cloud Data Sense, all of the source information is contained in a single step and only requires you to enter a few key details.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png[A screenshot that shows the Data Sense Integration page that appears after starting a new sync directly from Cloud Data Sense.]
+// end::whats-new[]
 
 == 6 February 2022
 
@@ -69,7 +86,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 You can now download a PDF of a report.
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html[Learn more about reports].
-// end::whats-new[]
 
 == 2 January 2022
 
