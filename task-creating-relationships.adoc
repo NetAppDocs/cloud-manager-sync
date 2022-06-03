@@ -103,6 +103,14 @@ Notifications:: Enables you to choose whether to receive Cloud Sync notification
 
 Retries:: Define the number of times that Cloud Sync should retry to sync a file before skipping it.
 
+Continuous Sync:: After the initial data sync, Cloud Sync listens for changes on the source S3 bucket and continuously syncs any changes to the target as they occur. There's no need to rescan the source at scheduled intervals. This setting is available only when you create the sync relationship and when an S3 bucket is the source.
++
+If you enable this setting, it affects other features as follows:
++
+* The following settings are reverted to their default values: Schedule, Sync Timeout, Recently Modified Files, and Date Modified.
+* Filter by size will be active only on copy events (not on delete events).
+* After the relationship is created, you can only accelerate or delete the relationship. You can't abort syncs, modify settings, or view reports.
+
 Compare By:: Choose whether Cloud Sync should compare certain attributes when determining whether a file or directory has changed and should be synced again.
 +
 Even if you uncheck these attributes, Cloud Sync still compares the source to the target by checking the paths, file sizes, and file names. If there are any changes, then it syncs those files and directories.
@@ -116,7 +124,7 @@ Copy for Objects:: Enable this option to copy object storage metadata and tags. 
 +
 You can't edit this option after you create the relationship.
 +
-Copying tags is supported with sync relationships that include an S3-compatible endpoint (S3, StorageGRID, or IBM Cloud Object Storage).
+Copying tags is supported with sync relationships that include Azure Blob or an S3-compatible endpoint (S3, StorageGRID, or IBM Cloud Object Storage) as the target.
 +
 Copying metadata is supported with "cloud-to-cloud" relationships between any of the following endpoints:
 +
