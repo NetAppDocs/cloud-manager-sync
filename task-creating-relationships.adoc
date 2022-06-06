@@ -107,7 +107,8 @@ Continuous Sync:: After the initial data sync, Cloud Sync listens for changes on
 +
 If you enable this setting, it affects other features as follows:
 +
-* The following settings are reverted to their default values: Schedule, Sync Timeout, Recently Modified Files, and Date Modified.
+* The sync schedule is disabled.
+* The following settings are reverted to their default values: Sync Timeout, Recently Modified Files, and Date Modified.
 * Filter by size will be active only on copy events (not on delete events).
 * After the relationship is created, you can only accelerate or delete the relationship. You can't abort syncs, modify settings, or view reports.
 
