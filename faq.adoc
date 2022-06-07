@@ -231,7 +231,7 @@ Cloud Sync copies object storage metadata from the source to the target for the 
 * IBM Cloud Object Storage -> StorageGRID
 * IBM Cloud Object Storage -> IBM Cloud Object Storage
 
-^1^ For these sync relationships, you need to link:task-creating-relationships.html[enable a setting when you create the sync relationship].
+^1^ For these sync relationships, you need to link:task-creating-relationships.html[enable the Copy for Objects setting when you create the sync relationship].
 
 == Performance
 

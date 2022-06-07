@@ -16,6 +16,40 @@ summary: Learn what's new in Cloud Sync.
 Learn what's new in Cloud Sync.
 
 // tag::whats-new[]
+== 6 June 2022
+
+=== Continuous sync
+
+A new setting enables you to continuously sync changes from a source S3 bucket to a target.
+
+After the initial data sync, Cloud Sync listens for changes on the source S3 bucket and continuously syncs any changes to the target as they occur. There's no need to rescan the source at scheduled intervals. This setting is available only when syncing from an S3 bucket to S3, Google Cloud Storage, Azure Blob storage, StorageGRID, or IBM Storage.
+
+Note that the IAM role associated with your data broker will need the following permissions to use this setting:
+
+[source,json]
+"s3:GetBucketNotification",
+"s3:PutBucketNotification"
+
+These permissions are automatically added to any new data brokers that you create.
+
+link:task-creating-relationships.html#settings[Learn more about the Continuous Sync setting].
+
+=== Show all ONTAP volumes
+
+When you create a sync relationship, Cloud Sync now displays all volumes on a source Cloud Volumes ONTAP system, on-premises ONTAP cluster, or FSx for ONTAP file system.
+
+Previously, Cloud Sync would only display the volumes that matched the selected protocol. Now all of the volumes display, but any volumes that don't match the selected protocol or that don't have a share or export are greyed out and not selectable.
+
+=== Copying tags to Azure Blob
+
+When you create a sync relationship where Azure Blob is the target, Cloud Sync now enables you to copy tags to the Azure Blob container:
+
+* On the *Settings* page, you can use the *Copy for Objects* setting to copy tags from the source to the Azure Blob container. This is in addition to copying metadata.
+
+* On the *Tags/Metadata* page, you can specify Blob index tags to set on the objects that are copied to the Azure Blob container. Previously, you could only specify relationship metadata.
+
+These options are supported when Azure Blob is the target and the source is either Azure Blob or an S3-compatible endpoint (S3, StorageGRID, or IBM Cloud Object Storage).
+
 == 1 May 2022
 
 === Sync timeout
@@ -51,6 +85,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html
 You can now filter the contents of the Sync Dashboard to more easily find sync relationships that match a certain status. For example, you can filter on sync relationships that have a failed status
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png[A screenshot that shows the Filter by sync status option at the top of the dashboard.]
+// end::whats-new[]
 
 == 3 March 2022
 
@@ -65,7 +100,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 In the previous release, we introduced Cloud Sync integration with Cloud Data Sense. In this update, we enhanced the integration by making it easier to create the sync relationship. After you initiate a data sync from Cloud Data Sense, all of the source information is contained in a single step and only requires you to enter a few key details.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-data-sense.png[A screenshot that shows the Data Sense Integration page that appears after starting a new sync directly from Cloud Data Sense.]
-// end::whats-new[]
 
 == 6 February 2022
 
