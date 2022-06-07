@@ -103,7 +103,9 @@ Notifications:: Enables you to choose whether to receive Cloud Sync notification
 
 Retries:: Define the number of times that Cloud Sync should retry to sync a file before skipping it.
 
-Continuous Sync:: After the initial data sync, Cloud Sync listens for changes on the source S3 bucket and continuously syncs any changes to the target as they occur. There's no need to rescan the source at scheduled intervals. This setting is available only when you create the sync relationship and when an S3 bucket is the source.
+Continuous Sync:: After the initial data sync, Cloud Sync listens for changes on the source S3 bucket and continuously syncs any changes to the target as they occur. There's no need to rescan the source at scheduled intervals.
++
+This setting is available only when creating the sync relationship and when you sync from an S3 bucket to S3, Google Cloud Storage, Azure Blob storage, StorageGRID, or IBM Storage.
 +
 If you enable this setting, it affects other features as follows:
 +
