@@ -47,7 +47,7 @@ Endpoint protocol:: One of the following protocols, as defined https://api.cloud
 
 Creds:: The URL must end with _Creds_.
 
-==== Examples
+=== Examples
 
 The following examples show URLs to secrets.
 
