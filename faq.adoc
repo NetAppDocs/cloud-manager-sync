@@ -63,7 +63,6 @@ Yes, you can use Cloud Sync in a non-cloud architecture. The source and target c
 
 Note the following key points about using Cloud Sync outside of the cloud:
 
-* For on-premises synchronization, a private Amazon S3 bucket is available through NetApp StorageGRID.
 * A data broker group needs an internet connection to communicate with the Cloud Sync service.
 * If you don't purchase a license directly from NetApp, you will need an AWS or Azure account for the PAYGO Cloud Sync service billing.
 
