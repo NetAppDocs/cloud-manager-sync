@@ -17,6 +17,4 @@ Known limitations identify platforms, devices, or functions that are not support
 
 * Cloud Sync is not supported in China.
 
-* In addition to China, the Cloud Sync data broker is not supported in the following regions:
-** Azure US Gov
-** Azure US DoD
+* Cloud Sync is not supported in AWS Government regions or in Azure Government regions.
