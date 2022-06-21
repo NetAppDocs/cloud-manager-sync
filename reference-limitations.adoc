@@ -15,8 +15,10 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 
-* Cloud Sync is not supported in China.
+Cloud Sync is not supported in the following regions:
 
-* In addition to China, the Cloud Sync data broker is not supported in the following regions:
-** Azure US Gov
-** Azure US DoD
+* AWS Government regions
+
+* Azure Government regions
+
+* China
