@@ -96,8 +96,9 @@ Yes, you can choose a specific S3 storage class when AWS S3 is the target:
 * Intelligent-Tiering
 * Standard-Infrequent Access
 * One Zone-Infrequent Access
-*	Glacier
 *	Glacier Deep Archive
+*	Glacier Flexible Retrieval
+* Glacier Instant Retrieval 
 
 === What about storage tiers for Azure Blob storage?
 
