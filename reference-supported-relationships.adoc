@@ -273,8 +273,9 @@ Notes:
 * Intelligent-Tiering
 * Standard-Infrequent Access
 * One Zone-Infrequent Access
-*	Glacier
 *	Glacier Deep Archive
+*	Glacier Flexible Retrieval
+* Glacier Instant Retrieval
 
 . You can choose a specific storage class when a Google Cloud Storage bucket is the target:
 +
