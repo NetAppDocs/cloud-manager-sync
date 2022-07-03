@@ -741,7 +741,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-07 13:05:51 +0000">06/07/2022</time>
+    <time datetime="2022-06-29 16:58:04 +0000">06/29/2022</time>
     
   
 
@@ -961,9 +961,9 @@ If you want to sync more than one directory on the NFS server, then you must cre
 </dd>
 <dt class="hdlist1">Continuous Sync</dt>
 <dd>
-<p>After the initial data sync, Cloud Sync listens for changes on the source S3 bucket and continuously syncs any changes to the target as they occur. There&#8217;s no need to rescan the source at scheduled intervals.</p>
+<p>After the initial data sync, Cloud Sync listens for changes on the source S3 bucket or Google Cloud Storage bucket and continuously syncs any changes to the target as they occur. There&#8217;s no need to rescan the source at scheduled intervals.</p>
 <div class="paragraph">
-<p>This setting is available only when creating the sync relationship and when you sync from an S3 bucket to S3, Google Cloud Storage, Azure Blob storage, StorageGRID, or IBM Storage.</p>
+<p>This setting is available only when creating a sync relationship and when you sync from an S3 bucket or Google Cloud Storage to S3, Google Cloud Storage, Azure Blob storage, StorageGRID, or IBM Storage.</p>
 </div>
 <div class="paragraph">
 <p>If you enable this setting, it affects other features as follows:</p>
@@ -977,7 +977,7 @@ If you want to sync more than one directory on the NFS server, then you must cre
 <p>The following settings are reverted to their default values: Sync Timeout, Recently Modified Files, and Date Modified.</p>
 </li>
 <li>
-<p>Filter by size will be active only on copy events (not on delete events).</p>
+<p>If S3 is the source, filter by size will be active only on copy events (not on delete events).</p>
 </li>
 <li>
 <p>After the relationship is created, you can only accelerate or delete the relationship. You can&#8217;t abort syncs, modify settings, or view reports.</p>
