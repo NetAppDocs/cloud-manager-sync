@@ -102,6 +102,10 @@ The SAS must allow access to the Blob service and all resource types (Service, C
 
 image:screenshot_connection_string_sas.gif["Shows a shared access signature, which is available from the Azure portal by selecting a storage account and then clicking Shared access signature."]
 
+== Azure Data Lake Storage Gen2
+
+When creating a sync relationship that includes Azure Data Lake, you need to provide Cloud Sync with the storage account connection string. It must be a regular connection string, not a shared access signature (SAS).
+
 == Azure NetApp Files requirement
 
 Use the Premium or Ultra service level when you sync data to or from Azure NetApp Files. You might experience failures and performance issues if the disk service level is Standard.

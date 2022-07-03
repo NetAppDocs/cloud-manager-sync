@@ -43,6 +43,7 @@ Cloud Sync supports the following storage types:
 * Amazon FSx for ONTAP
 * Amazon S3
 * Azure Blob
+* Azure Data Lake Storage Gen2
 * Azure NetApp Files
 * Box (available as a preview)
 * Cloud Volumes Service
